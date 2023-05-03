@@ -11,11 +11,13 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func heightSliderChanged(_ sender: UISlider) {
-        print(sender.value)
+        print(round(sender.value*100)/100)
+        print(String(format: "%.2f", sender.value))
     }
     
     @IBAction func weightSliderChanged(_ sender: UISlider) {
-        print(sender.value)
+        print(String(format: "%.0f", sender.value))
+        print(Int(sender.value))
     }
     
     
